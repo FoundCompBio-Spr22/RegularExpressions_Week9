@@ -194,3 +194,17 @@ Now, the `.findall()` function will search through the entire input file. Howeve
 ## Origin of Species (plain text)
 
 https://www.gutenberg.org/cache/epub/2009/pg2009.txt
+
+## In-Class Regex Practice (Origin of Species)
+
+- How many times is the name Darwin referenced? And how many different people with that name?
+
+- How many times does Darwin use the term "evolution" or some closely related word (e.g., "evolutionist")? Note that the word can start a sentence (i.e., Evolution...) or be in the middle of a sentence (i.e., evolution...).
+
+- How many times does Darwin write some character (any one other than whitespace), followed by a period, followed by another character (not whitespace)?
+
+- Darwin is known for his copious commas. Can you find the single line in this file that has 9 commas?
+
+- How many times (in total) does Darwin use the Roman numeral for 5 (v, V), 6 (vi, VI), 7 (vii, VII), and 8 (viii, VIII)? You can assume that he always terminates these with a period. (e.g., vi.)
+
+- (Challenge question!) Now let's say that in a new version, you'd like to anonymize all the names that follow titles (Mr., Ms., Mrs., Dr.). So, Dr. Brown would become Dr. B. Write regular expressions to do this. Note that these names may be in any of these forms: Dr. Brown, Dr. J. Brown, Dr. J.M. Brown, or Dr. Jeremy Brown. Hint: try converting 2nd, 3rd, and 4th forms to the first form to start. Then do the anonymization. Remember that the names may occur in the middle or at the end of a sentence.
